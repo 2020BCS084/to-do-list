@@ -1,0 +1,28 @@
+<%- include("header") -%>
+
+    <div class="box", id="heading">
+        <h1><%=day1%></h1>
+
+    </div>
+        <br>
+      <div class="box" >
+
+          <%for(var i=0; i<ite.length; i++){ %>
+              <div class="item">
+                  <p> <%= ite[i] %> </p>
+              </div>
+ 
+         <% } %>
+         
+         <form class="item" action="/", method="post">
+            <input type="text", name="addtask", placeholder="New item" autocomplete="off" class="int">  
+            <button type="submit" name="bttn", value=<%= day1 %>>+</button>
+         </form>
+      </div>
+    
+
+
+ 
+
+<%- include("footer") -%>
+<!-- // there is some problem with this lenght function.. -->
